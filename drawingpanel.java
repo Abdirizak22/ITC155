@@ -1,29 +1,23 @@
-public class MickeyBox {
-
-	public static void main(String[] args) {
-
-        DrawingPanel panel = new DrawingPanel(220, 150);
-
-        panel.setBackground(new Color(255, 255, 0));
-
+public class Assignment1 {
+	
+    public static void main(String[] args)
+    {
+        DrawingPanel panel = new DrawingPanel(300, 200);
+	   panel.setBackground(color.Yellow);
+	    
         Graphics g = panel.getGraphics();
+	    
+        g.setColor(Color.CYAN);
+	    
+        g.fillRect(0, 0, 300, 200);
+	    
+        g.setColor(Color.RED);
         
-		g.setColor(Color.BLUE);
-
-		g.fillOval(50, 25, 40, 40);
-
-		g.fillOval(130, 25, 40, 40);
-
-		g.setColor(Color.RED);
-
-		g.fillRect(70, 45, 80, 80);
-
-		g.setColor(Color.BLACK);
-
-		g.drawLine(70, 85, 150, 85);
-
+        for(int i = 1; i <= 5; i++)
+            g.drawRect(50, 50, 20 * i, 20 * i);
+            
+        g.setColor(Color.BLACK);
+	    
+        g.drawLine(50, 50, 150, 150);
     }
-
-
-
 }
